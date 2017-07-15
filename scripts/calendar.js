@@ -19,7 +19,7 @@ function calendar(date) {
 
   calendar_html = '<table style="background-color:666699; color:ffffff; hight: 100%; width: 100%">';
   calendar_html += '<tr><td colspan="7" style="background-color:9999cc; color:000000; text-align: center;">' + months[month] + ' ' + year + '</td></tr>';
-  calendar_html += '<tr style="text-align: center;"><td>Sunday</td><td>Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td><td>Saturday</td>'
+  calendar_html += '<tr style="text-align: center;"><td>Sun</td><td>Mon</td><td>Tues</td><td>Wed</td><td>Thur</td><td>Fri</td><td>Sat</td>'
   calendar_html += '<tr>';
 
   // Fill the first week of the month with the appropriate number of blanks.
