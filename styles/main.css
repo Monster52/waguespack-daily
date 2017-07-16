@@ -32,6 +32,30 @@ a:active {
 	margin-bottom: 50px;
 }
 
+.hero {
+	width: 50%;
+	margin-left: 15%;
+	margin-top: 5%;
+	background-color: rgba(245,255,250,0.3);
+}
+
+.hero p {
+	background-color: rgba(245,255,250,0.0);
+}
+
+.main-bg {
+	background: url("../images/daily-bg.jpg") no-repeat fixed center;
+	background-size: cover;
+}
+
+.clean-bg {
+	opacity: 0.0;
+}
+
+* {
+	background-color: rgb(245,255,250);
+}
+
 /* Days Styles  */
 
 .days {
@@ -89,13 +113,15 @@ a:active {
 	width: 25%;
 }
 
-.fa-arrow-right {
-	margin-left: 10%;
-	display: inline-block;
-	width: 25%;
-	text-align: right;
-	-ms-transform: rotate(-40deg); /* IE 9 */
-   -webkit-transform: rotate(-40deg); /* Safari */
-   transform: rotate(-40deg);
+.fa-sun-o {
+	color: rgb(218,165,32);
 }
+
+.fa-cloud {
+	color: rgb(128,123,123);
+}
+
+.fa-tint { color: rgb(0,191,255); }
+
+.temp { color: red; }
 

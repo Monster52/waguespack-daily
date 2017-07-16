@@ -19,6 +19,7 @@ body {
     justify-content: space-between;
     padding: 0.5rem;
     z-index: 1;
+    background-color: rgba(0,0,0,0.0);
 }
 
 .navbar .logo {
@@ -29,6 +30,10 @@ body {
     font-weight: 700;
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+.logo a:hover {
+  color: rgb(135,206,250);
 }
 
 .navbar .links-container {
@@ -58,7 +63,7 @@ body {
 }
 
 .links-container .navbar-link:hover {
-    color: rgb(233,50,117);
+    color: rgb(135,206,250);
 }   
 
 
