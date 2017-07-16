@@ -5,6 +5,7 @@
 
 	  
 		<link rel="stylesheet" type="text/css" href="styles/baseplate.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
 		<link rel="stylesheet" type="text/css" href="styles/calendar.css">
 
 		<script
@@ -21,10 +22,25 @@
 
 	</head>
 	<body>
-	<h1>Calendar</h1>
-	<a href="index.html">Home</a>
 
-		<div class="baseplate cal">
+		<nav class="navbar">
+			<div class="navbar logo">
+				<a href="index.html">HomeSchool Daily</a>
+			</div>
+
+			<div class="navbar links-container">
+				<a href="calendar.html" class="navbar-link">Calendar</a>
+			</div>
+		</nav>
+
+		<div>
+			<a href="index.html" class="fa fa-2x fa-angle-left left"></a>
+		</div>
+		<div>
+			<a href="#" class="fa fa-2x fa-angle-right right"></a>
+		</div>
+
+		<div class="baseplate cal clearfix">
 			<script type="text/javascript">calendar();</script>
 		</div>
 
