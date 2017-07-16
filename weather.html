@@ -37,16 +37,14 @@
 		<div>
 			<a href="days_of_school.html" class="fa fa-2x fa-angle-left left"></a>
 		</div>
-<!-- 		<div>
-			<a href="#" class="fa fa-2x fa-angle-right right"></a>
-		</div> -->
 
+		<h2>Todays Weather is:_____________</h2>
 		<div class="clearfix">
-			<h2>Todays Weather is?</h2>
-			<div class="fa fa-2x fa-arrow-right"></div>
-			<div class="weather" id="wheel">
-				<img src="images/weather_1.jpg" alt="weather wheel" />
-			</div>
+			<div class="col fa fa-2x fa-sun-o cond"><small>&nbsp;Sunny</small></div>
+			<div class="col fa fa-2x fa-cloud cond"><small>&nbsp;Cloudy</small></div>
+			<div class="col fa fa-2x fa-snowflake-o"><small>&nbsp;Snowy</small></div>
+			<div class="col fa fa-2x fa-tint"><small>&nbsp;Rain</small></div>
+			
 		</div>
 
 		<h2 class="lower">Today's Temperature is:__________</h2>
@@ -64,22 +62,10 @@
     		$( ".temp" ).draggable();
 			});
 
-    	$(document).ready(function() {
-        var params = {
-           start: function(event, ui) {
-                console.log("Rotating started")
-            },
-            rotate: function(event, ui) {
-                if (Math.abs(ui.angle.current > 6)) {
-                  console.log("Rotating " + ui.angle.current)
-                }
-            },
-            stop: function(event, ui) {
-                console.log("Rotating stopped")
-            },
-        	};
-        	$('#wheel').rotatable(params);
-    		});
+			$( document ).ready(function() {
+    		$( ".cond" ).draggable();
+			});
+
 			</script>
 
 
