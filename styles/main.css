@@ -12,6 +12,10 @@ a:active {
     color: black;
 }
 
+.left { float: left; }
+.right { float: right; }
+.lower { margin-top: 100px; }
+
 /*      Calendar Styles      */
 
 .left { float: left; }
@@ -76,3 +80,22 @@ a:active {
 	padding-top: 15px;
 	background-color: white;
 }
+
+/*   Weather  */
+
+.weather {
+	display: inline-block;
+	margin: auto;
+	width: 25%;
+}
+
+.fa-arrow-right {
+	margin-left: 10%;
+	display: inline-block;
+	width: 25%;
+	text-align: right;
+	-ms-transform: rotate(-40deg); /* IE 9 */
+   -webkit-transform: rotate(-40deg); /* Safari */
+   transform: rotate(-40deg);
+}
+
