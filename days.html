@@ -3,10 +3,8 @@
 	<head>
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	  
 		<link rel="stylesheet" type="text/css" href="styles/baseplate.css">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
-		<link rel="stylesheet" type="text/css" href="styles/calendar.css">
 
 		<script
   		src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -18,11 +16,9 @@
 			crossorigin="anonymous"></script>
 		<script type="text/javascript" src="scripts/jquery.ui.touch-punch.min.js"></script>
 		<script src="https://use.fontawesome.com/c3863e24e5.js"></script>
-  	<script type="text/javascript" src="scripts/calendar.js"></script>
 
 	</head>
 	<body>
-
 		<nav class="navbar">
 			<div class="navbar logo">
 				<a href="index.html">HomeSchool Daily</a>
@@ -35,22 +31,36 @@
 		</nav>
 
 		<div>
-			<a href="index.html" class="fa fa-2x fa-angle-left left"></a>
+			<a href="calendar.html" class="fa fa-2x fa-angle-left left"></a>
 		</div>
 		<div>
-			<a href="days.html" class="fa fa-2x fa-angle-right right"></a>
+			<a href="#" class="fa fa-2x fa-angle-right right"></a>
 		</div>
 
-		<div class="baseplate cal clearfix">
-			<script type="text/javascript">calendar();</script>
-		</div>
+		<div class="baseplate clearfix">
+			<div class="col days">
+				<h3>Yesterday was:______________________</h3>
+				<br/>
+				<h3>Today is:___________________________</h3>
+				<br/>
+				<h3>Tomorow will be:____________________</h3>
+			</div>
 
-		<div class="fa fa-3x fa-star"></div>
+			<div class="col text-center">
+				<div class="single-days mon">Monday</div>
+				<div class="single-days tue">Tuesday</div>
+				<div class="single-days wed">Wednesday</div>
+				<div class="single-days thr">Thursday</div>
+				<div class="single-days fri">Friday</div>
+				<div class="single-days sat">Saturday</div>
+				<div class="single-days sun">Sunday</div>
+			</div>
+		</div>
 
 		<script>
 
 			$( document ).ready(function() {
-    		$( ".fa-star" ).draggable();
+    		$( ".single-days" ).draggable();
 			});
 
 		</script>
